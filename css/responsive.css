@@ -1,0 +1,54 @@
+/* ================================================
+   EDUARDO FROIS · PORTFÓLIO — responsive.css
+   Breakpoints: 1024px · 768px · 480px
+   ================================================ */
+
+@media (max-width: 1024px) {
+  .hero__inner { grid-template-columns: 1fr; }
+  .hero__foto-wrap { display: none; }
+  .sobre__grid { grid-template-columns: 1fr; }
+  .sobre__stats { grid-template-columns: repeat(4, 1fr); }
+  .stack__grid { grid-template-columns: repeat(2, 1fr); }
+  .projetos__grid { grid-template-columns: repeat(2, 1fr); }
+  .projeto--lg { grid-column: span 2; }
+  .contato__grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .nav__links {
+    position: fixed;
+    inset: 0 auto 0 auto;
+    right: -100%;
+    width: min(75vw, 280px);
+    background: #0D0D0D;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 1.75rem;
+    gap: 2rem;
+    transition: right 0.3s ease;
+    border-left: 1px solid var(--borda);
+  }
+  .nav__links.open { right: 0; }
+  .nav__links a { font-size: 1rem; color: var(--muted); }
+  .nav__toggle { display: flex; }
+  .nav__overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 99; }
+  .nav__overlay.visible { display: block; }
+
+  .hero__ctas { flex-direction: column; }
+  .hero__ctas .btn { text-align: center; }
+
+  .sobre__stats { grid-template-columns: repeat(2, 1fr); }
+  .stack__grid  { grid-template-columns: 1fr 1fr; }
+  .projetos__grid { grid-template-columns: 1fr; }
+  .projeto--lg { grid-column: span 1; }
+  .projeto--lg .projeto__img img { height: 200px; }
+
+  .footer__inner { flex-direction: column; text-align: center; gap: 0.75rem; }
+}
+
+@media (max-width: 480px) {
+  .stack__grid  { grid-template-columns: 1fr; }
+  .sobre__stats { grid-template-columns: 1fr 1fr; }
+  .hero__socials { flex-wrap: wrap; gap: 1rem; }
+}
