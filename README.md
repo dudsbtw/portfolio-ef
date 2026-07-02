@@ -72,4 +72,4 @@ npx http-server .
 
 - Email: eduardo.f.frois.s@gmail.com
 - GitHub: [github.com/dudsbtw](https://github.com/dudsbtw)
-- LinkedIn: [linkedin.com/in/dudsbtw](https://linkedin.com/in/eduardo-frois)
+- LinkedIn: [linkedin.com/in/eduardo-frois](https://linkedin.com/in/eduardo-frois)
